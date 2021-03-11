@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\logo192.png" />
+    <Content Remove="wwwroot\logo512.png" />
+    <Content Remove="wwwroot\robots.txt" />
+    <Content Remove="wwwroot\static\css\main.8c8b27cf.chunk.css" />
+    <Content Remove="wwwroot\static\css\main.8c8b27cf.chunk.css.map" />
+    <Content Remove="wwwroot\static\js\2.16503a38.chunk.js" />
+    <Content Remove="wwwroot\static\js\2.16503a38.chunk.js.LICENSE.txt" />
+    <Content Remove="wwwroot\static\js\2.16503a38.chunk.js.map" />
+    <Content Remove="wwwroot\static\js\3.f2a1977d.chunk.js" />
+    <Content Remove="wwwroot\static\js\3.f2a1977d.chunk.js.map" />
+    <Content Remove="wwwroot\static\js\main.1107ffb1.chunk.js" />
+    <Content Remove="wwwroot\static\js\main.1107ffb1.chunk.js.map" />
+    <Content Remove="wwwroot\static\js\runtime-main.a6837962.js" />
+    <Content Remove="wwwroot\static\js\runtime-main.a6837962.js.map" />
+    <Content Remove="wwwroot\static\media\logo.6ce24c58.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\favicon.ico" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\logo192.png" />
+    <None Include="wwwroot\logo512.png" />
+    <None Include="wwwroot\robots.txt" />
+    <None Include="wwwroot\static\css\main.8c8b27cf.chunk.css" />
+    <None Include="wwwroot\static\css\main.8c8b27cf.chunk.css.map" />
+    <None Include="wwwroot\static\js\2.16503a38.chunk.js" />
+    <None Include="wwwroot\static\js\2.16503a38.chunk.js.LICENSE.txt" />
+    <None Include="wwwroot\static\js\2.16503a38.chunk.js.map" />
+    <None Include="wwwroot\static\js\3.f2a1977d.chunk.js" />
+    <None Include="wwwroot\static\js\3.f2a1977d.chunk.js.map" />
+    <None Include="wwwroot\static\js\main.1107ffb1.chunk.js" />
+    <None Include="wwwroot\static\js\main.1107ffb1.chunk.js.map" />
+    <None Include="wwwroot\static\js\runtime-main.a6837962.js" />
+    <None Include="wwwroot\static\js\runtime-main.a6837962.js.map" />
+    <None Include="wwwroot\static\media\logo.6ce24c58.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\HighFive.Core\HighFive.Core.csproj" />
+    <ProjectReference Include="..\..\Common\HighFive.Domain\HighFive.Domain.csproj" />
+    <ProjectReference Include="..\HighFive.Web.Core\HighFive.Web.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\asset-manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
